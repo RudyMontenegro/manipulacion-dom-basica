@@ -1,0 +1,35 @@
+//document.query dan una amplio opcion de reconcer elementos de html
+var h1 = document.querySelector('h1')
+const p = document.querySelector('p')
+const parrafito = document.querySelector('.parrafito')//query selector se debe especificar que tipo de elemento .(tipoElemento) , #(id) 
+
+const pid = document.getElementById('pid')// leer id
+const input = document.querySelector('input')
+
+console.log(input.value)// se debe poner este comando para ver valor
+
+
+console.log({h1,p,parrafito,pid,input});// poner como objeto para ver normal en consola
+
+h1.innerHTML = "Patito <br> Feo";
+
+h1.innerText = "Patito <br> Feo";
+
+//console.log(h1.getAttribute('pantalla'))
+
+h1.setAttribute('class', 'rojo');// annadir otra clase
+h1.classList.add('amarillo');
+h1.classList.remove('verde')
+
+h1.classList.toggle('verde')//dependiendo si ya existe la clase
+h1.classList.contains('verde')//condicional si existe la clase
+
+input.value = "a45"
+
+const img = document.createElement('img');//
+//img.setAttribute('src', 'https://source.unsplash.com/random')
+
+//console.log(img)
+
+//pid.innerHTML = ""
+//pid.append(img);
